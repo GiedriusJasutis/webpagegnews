@@ -1,0 +1,19 @@
+@import './../../index.scss';
+
+.alert {
+  text-align: center;
+  color: $color-danger;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .search__input-group {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 700px;
+  }
+}

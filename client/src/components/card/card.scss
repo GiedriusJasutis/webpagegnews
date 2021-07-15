@@ -1,0 +1,64 @@
+@import '../../index.scss';
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+
+  .card {
+    transition: 0.3s;
+    padding: 10px;
+    max-width: 300px;
+    flex-grow: 1;
+    margin: 10px;
+    background-color: #f4f4f4;
+
+    &:hover {
+      background-color: darken($light-color, $amount: 5);
+      cursor: pointer;
+    }
+
+    .card__container {
+      display: flex;
+      flex-direction: column;
+      min-height: 200px;
+
+      .card__content {
+        max-width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 10px 0;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        margin-top: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 697px) {
+  .cards {
+    .card {
+      flex-wrap: nowrap;
+      width: 200px;
+
+      .card__container {
+        min-height: 100px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .cards {
+    .card {
+      flex-wrap: nowrap;
+      width: 150px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+
+### POST by searchKeyword
+POST http://localhost:5000/api/gnews
+Content-Type: application/json
+
+{
+  "searchKeyword" : "search keyword"
+}
+
+
+
+### POST details
+POST http://localhost:5000/api/details
+Content-Type: application/json
+
+{
+  "details" : "details"
+}
